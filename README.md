@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Check the game on :- https://github.com/Vivek-vp123/tic-tac-toe-using-react.git
+# Check the game on :- 
+### https://vivek-vp123.github.io/tic-tac-toe-using-react/
 
 ## Available Scripts
 

@@ -1,38 +1,83 @@
+/* src/App.css */
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #d4ebd5;
+  height: 50%;
+  width: 50%;
+  box-shadow: 10px 10px 10px rgb(204, 202, 202);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.board-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; /* Add margin here to create space between status bar and board */
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.square:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.winning {
+  background-color: #4caf50;
+  animation: winner-animation 1s infinite;
+}
+
+@keyframes winner-animation {
+  0% { background-color: #4caf50; }
+  50% { background-color: #a5d6a7; }
+  100% { background-color: #4caf50; }
+}
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5ec999;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: #3fa878;
+  box-shadow: 5px 5px 5px rgb(173, 169, 169, 0.5);
+  transition: ease 0.2s;
 }

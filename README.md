@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Check the game on :- https://github.com/Vivek-vp123/tic-tac-toe-using-react.git
+
 ## Available Scripts
 
 In the project directory, you can run:

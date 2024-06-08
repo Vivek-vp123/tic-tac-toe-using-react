@@ -81,3 +81,14 @@
   box-shadow: 5px 5px 5px rgb(173, 169, 169, 0.5);
   transition: ease 0.2s;
 }
+@media (max-width: 480px) {
+ .App{
+  display: flex;
+  width: calc(100%);
+ }
+ .game{
+  display: flex;
+  width: 80%;
+  height: 60%;
+ }
+}
